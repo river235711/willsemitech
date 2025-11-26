@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',()=>{console.log('Will Semitech website loaded successfully');});
