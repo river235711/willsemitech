@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html>
+
+# HTML content for index.html
+<html lang="en">
 <head>
-  <title>willsemitech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxxtech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>willsemitech</h1>
-  <p>coming ...</p>
+    <header>
+        <h1>xxxtech</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#sustainability">Sustainability</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleLanguage()">EN / 中文</button>
+    </header>
+
+    <section id="home">
+        <h2 data-en="Welcome to xxxtech" data-zh="歡迎來到 xxxtech">Welcome to xxxtech</h2>
+        <p data-en="Innovating the future of technology." data-zh="創新未來科技。">Innovating the future of technology.</p>
+    </section>
+
+    <section id="about">
+        <h2 data-en="About Us" data-zh="關於我們">About Us</h2>
+        <p data-en="xxxtech is a global leader in semiconductor solutions." data-zh="xxxtech 是全球半導體解決方案的領導者。">xxxtech is a global leader in semiconductor solutions.</p>
+    </section>
+
+    <section id="technology">
+        <h2 data-en="Technology" data-zh="技術">Technology</h2>
+        <p data-en="We deliver cutting-edge manufacturing processes." data-zh="我們提供最先進的製造工藝。">We deliver cutting-edge manufacturing processes.</p>
+    </section>
+
+    <section id="sustainability">
+        <h2 data-en="Sustainability" data-zh="永續發展">Sustainability</h2>
+        <p data-en="Committed to a greener future." data-zh="致力於綠色未來。">Committed to a greener future.</p>
+    </section>
+
+    <section id="careers">
+        <h2 data-en="Careers" data-zh="職涯">Careers</h2>
+        <p data-en="Join our team and shape the future." data-zh="加入我們，共同塑造未來。">Join our team and shape the future.</p>
+    </section>
+
+    <section id="contact">
+        <h2 data-en="Contact Us" data-zh="聯絡我們">Contact Us</h2>
+        <p data-en="Email: info@xxxtech.com" data-zh="電子郵件：info@xxxtech.com">Email: info@xxxtech.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 xxxtech. All rights reserved.</p>
+    </footer>
 </body>
 </html>
