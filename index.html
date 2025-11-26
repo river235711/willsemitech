@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Will Semitech - Home</title>
-    <link rel='stylesheet' href='style.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Semitech - Home</title>
+  <meta name="description" content="Innovating wireless semiconductor solutions. Empowering connectivity with cutting-edge technology.">
+  <link rel="canonical" href="https://willsemitech.com/">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Will Semitech">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://willsemitech.com/">
+  <meta property="og:description" content="Innovating wireless semiconductor solutions. Empowering connectivity with cutting-edge technology.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <div class='logo'><img src='logo.png' alt='Will Semitech Logo' style='height:50px;'></div>
-    <nav>
-        <ul>
-            <li><a href='/'>Home</a></li>
-            <li><a href='/about'>About</a></li>
-            <li><a href='/products'>Products</a></li>
-            <li><a href='/contact'>Contact</a></li>
-        </ul>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img src="logo.png" alt="Will Semitech Logo" class="header__logo-img">
+    </div>
+    <nav class="nav" aria-label="Main Navigation">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="/products" class="nav__link">Products</a></li>
+        <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+      </ul>
     </nav>
-</header>
-    <section class='hero'>
-        <h1>Innovating Wireless Solutions</h1>
-        <p>Empowering connectivity with cutting-edge semiconductor technology.</p>
-        <a href='/products' class='btn'>Explore Products</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="hero" role="region" aria-label="Hero Section">
+      <h1 class="hero__title">Innovating Wireless Solutions</h1>
+      <p class="hero__description">Empowering connectivity with cutting-edge semiconductor technology.</p>
+      <a href="/products" class="btn btn--primary hero__btn">Explore Products</a>
     </section>
-    <footer>
-    <p>&copy; 2025 Will Semitech. All rights reserved.</p>
-</footer>
-    <script src='script.js'></script>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Will Semitech. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
