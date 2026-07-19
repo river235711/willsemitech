@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer - willsemitech</title>
+    <link rel="icon" type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+      %3Ctext x='50' y='54'
+        font-size='64'
+        font-weight='600'
+        fill='%23007AFF'
+        text-anchor='middle'
+        dominant-baseline='central'
+        font-family='Inter, Segoe UI, Helvetica, Arial, sans-serif'%3EW%3C/text%3E
+      %3C/svg%3E">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="logo" onclick="window.location.href='../index.html'">willsemitech</span>
+            <ul class="nav-menu">
+                <li><a href="../products/index.html" data-en="Products" data-zh-cn="产品" data-zh-tw="產品" data-ja="製品" data-ko="제품">Products <span class="dropdown-icon">▼</span></a></li>
+                <li><a href="../applications/index.html" data-en="Applications" data-zh-cn="应用" data-zh-tw="應用" data-ja="アプリケーション" data-ko="응용 분야">Applications <span class="dropdown-icon">▼</span></a></li>
+                <li><a href="index.html" data-en="Developer" data-zh-cn="开发者" data-zh-tw="開發者" data-ja="開発者" data-ko="개발자">Developer <span class="dropdown-icon">▼</span></a></li>
+                <li><a href="../support/index.html" data-en="Support" data-zh-cn="支持" data-zh-tw="支持" data-ja="サポート" data-ko="지원">Support <span class="dropdown-icon">▼</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-menu">
+                <li>
+                    <a href="../company/index.html"
+                       data-en="Company"
+                       data-zh-cn="公司"
+                       data-zh-tw="公司"
+                       data-ja="企業"
+                       data-ko="회사">
+                       Company <span class="dropdown-icon">▼</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-button" onclick="toggleLangDropdown()">
+                    <svg class="lang-flag" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <span class="lang-text">EN</span>
+                    <span style="font-size: 0.7em;">▼</span>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a class="lang-option active" onclick="switchLanguage('en')" data-lang="en">English</a>
+                    <a class="lang-option" onclick="switchLanguage('zh-cn')" data-lang="zh-cn">简体中文</a>
+                    <a class="lang-option" onclick="switchLanguage('zh-tw')" data-lang="zh-tw">繁體中文</a>
+                    <a class="lang-option" onclick="switchLanguage('ja')" data-lang="ja">日本語</a>
+                    <a class="lang-option" onclick="switchLanguage('ko')" data-lang="ko">한국어</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="../index.html" data-en="Home" data-zh-cn="首页" data-zh-tw="首頁" data-ja="ホーム" data-ko="홈">Home</a> / <span data-en="Developer" data-zh-cn="开发者" data-zh-tw="開發者" data-ja="開発者" data-ko="개발자">Developer</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="content-section">
+            <h2
+                data-en="Built By CAD Engineers, For CAD Engineers"
+                data-zh-cn="由 CAD 工程师打造，为 CAD 工程师服务"
+                data-zh-tw="由 CAD 工程師打造，為 CAD 工程師服務"
+                data-ja="CADエンジニアによる、CADエンジニアのためのチーム"
+                data-ko="CAD 엔지니어가 CAD 엔지니어를 위해 만든 팀">
+                Built By CAD Engineers, For CAD Engineers
+            </h2>
+            <p
+                data-en="Our engineers work inside the same toolchains your team already uses, so our automation drops into your flow without disruption."
+                data-zh-cn="我们的工程师使用与您团队相同的工具链，因此我们的自动化方案能顺畅导入您的流程，不造成中断。"
+                data-zh-tw="我們的工程師使用與您團隊相同的工具鏈，因此我們的自動化方案能順暢導入您的流程，不造成中斷。"
+                data-ja="当社のエンジニアはお客様のチームと同じツールチェーンを使用するため、自動化ソリューションを既存フローに支障なく導入できます。"
+                data-ko="당사 엔지니어는 고객 팀과 동일한 툴체인을 사용하므로 자동화 솔루션을 기존 플로우에 차질 없이 도입할 수 있습니다.">
+                Our engineers work inside the same toolchains your team already uses, so our automation drops into your flow without disruption.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3
+                data-en="Toolchain &amp; Scripting"
+                data-zh-cn="工具链与脚本能力"
+                data-zh-tw="工具鏈與腳本能力"
+                data-ja="ツールチェーンとスクリプティング"
+                data-ko="툴체인 및 스크립팅">
+                Toolchain &amp; Scripting
+            </h3>
+            <div class="items-grid">
+                <div class="item-card">
+                    <h4 data-en="Schematic &amp; Layout" data-zh-cn="电路图与版图" data-zh-tw="電路圖與版圖" data-ja="回路図・レイアウト" data-ko="스키매틱 및 레이아웃">Schematic &amp; Layout</h4>
+                    <p data-en="SKILL and OpenAccess automation across Cadence Virtuoso environments." data-zh-cn="在 Cadence Virtuoso 环境下，使用 SKILL 与 OpenAccess 进行自动化。" data-zh-tw="在 Cadence Virtuoso 環境下，使用 SKILL 與 OpenAccess 進行自動化。" data-ja="Cadence Virtuoso環境向けのSKILLおよびOpenAccess自動化。" data-ko="Cadence Virtuoso 환경을 위한 SKILL 및 OpenAccess 자동화.">SKILL and OpenAccess automation across Cadence Virtuoso environments.</p>
+                </div>
+                <div class="item-card">
+                    <h4 data-en="Verification" data-zh-cn="验证" data-zh-tw="驗證" data-ja="検証" data-ko="검증">Verification</h4>
+                    <p data-en="Rule-deck scripting for Calibre and other DRC/LVS/LPE sign-off tools." data-zh-cn="为 Calibre 及其他 DRC/LVS/LPE 签核工具编写规则档脚本。" data-zh-tw="為 Calibre 及其他 DRC/LVS/LPE 簽核工具撰寫規則檔腳本。" data-ja="Calibreおよびその他のDRC/LVS/LPEサインオフツール向けのルールデッキスクリプティング。" data-ko="Calibre 및 기타 DRC/LVS/LPE 사인오프 툴을 위한 룰 덱 스크립팅.">Rule-deck scripting for Calibre and other DRC/LVS/LPE sign-off tools.</p>
+                </div>
+                <div class="item-card">
+                    <h4 data-en="Flow Automation" data-zh-cn="流程自动化" data-zh-tw="流程自動化" data-ja="フロー自動化" data-ko="플로우 자동화">Flow Automation</h4>
+                    <p data-en="Python and Tcl pipelines that connect synthesis, place-and-route, and sign-off stages." data-zh-cn="以 Python 与 Tcl 打造串接合成、佈局绕线与签核阶段的流程。" data-zh-tw="以 Python 與 Tcl 打造串接合成、佈局繞線與簽核階段的流程。" data-ja="合成、配置配線、サインオフの各段階を連携させるPython・Tclパイプライン。" data-ko="합성, 배치 배선, 사인오프 단계를 연결하는 Python 및 Tcl 파이프라인.">Python and Tcl pipelines that connect synthesis, place-and-route, and sign-off stages.</p>
+                </div>
+                <div class="item-card">
+                    <h4 data-en="PDK Integration" data-zh-cn="PDK 整合" data-zh-tw="PDK 整合" data-ja="PDK統合" data-ko="PDK 통합">PDK Integration</h4>
+                    <p data-en="Foundry PDK bring-up and validation across multiple process nodes." data-zh-cn="跨多个制程节点的晶圆代工 PDK 导入与验证。" data-zh-tw="跨多個製程節點的晶圓代工 PDK 導入與驗證。" data-ja="複数のプロセスノードにわたるファウンドリーPDKの立ち上げと検証。" data-ko="여러 공정 노드에 걸친 파운드리 PDK 도입 및 검증.">Foundry PDK bring-up and validation across multiple process nodes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3
+                data-en="Engineering Resources"
+                data-zh-cn="工程资源"
+                data-zh-tw="工程資源"
+                data-ja="エンジニアリングリソース"
+                data-ko="엔지니어링 리소스">
+                Engineering Resources
+            </h3>
+            <p
+                data-en="We publish integration notes and lessons learned from active engagements on our LinkedIn page as they become available."
+                data-zh-cn="我们会在 LinkedIn 页面上不定期发布来自实际项目的整合笔记与经验分享。"
+                data-zh-tw="我們會在 LinkedIn 頁面上不定期發布來自實際專案的整合筆記與經驗分享。"
+                data-ja="実際のプロジェクトから得られた統合ノートや知見を、随時LinkedInページで公開しています。"
+                data-ko="실제 프로젝트에서 얻은 통합 노트와 인사이트를 LinkedIn 페이지를 통해 수시로 공유하고 있습니다.">
+                We publish integration notes and lessons learned from active engagements on our LinkedIn page as they become available.
+            </p>
+        </div>
+
+        <div class="cta-section">
+            <h2
+                data-en="Join Our Engineering Team"
+                data-zh-cn="加入我们的工程团队"
+                data-zh-tw="加入我們的工程團隊"
+                data-ja="エンジニアリングチームに参加する"
+                data-ko="엔지니어링 팀에 합류하세요">
+                Join Our Engineering Team
+            </h2>
+            <p
+                data-en="If you enjoy building CAD automation as much as we do, we would love to hear from you."
+                data-zh-cn="如果您也和我们一样喜欢打造 CAD 自动化，欢迎与我们联系。"
+                data-zh-tw="如果您也和我們一樣喜歡打造 CAD 自動化，歡迎與我們聯繫。"
+                data-ja="私たちと同じようにCAD自動化の構築に情熱をお持ちであれば、ぜひご連絡ください。"
+                data-ko="당사와 마찬가지로 CAD 자동화 구축에 열정이 있으시다면 연락 주세요.">
+                If you enjoy building CAD automation as much as we do, we would love to hear from you.
+            </p>
+            <button class="cta-button" onclick="window.location.href='../company/index.html'"
+                data-en="View Job Opportunities"
+                data-zh-cn="查看职位机会"
+                data-zh-tw="查看職位機會"
+                data-ja="求人情報を表示"
+                data-ko="채용 정보 보기">
+                View Job Opportunities
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><span data-en="&copy; 2026 willsemitech Corporation. All rights reserved." data-zh-cn="&copy; 2026 willsemitech 公司。保留所有权利。" data-zh-tw="&copy; 2026 willsemitech 公司。保留所有權利。" data-ja="&copy; 2026 willsemitech Corporation. All rights reserved." data-ko="&copy; 2026 willsemitech Corporation. All rights reserved.">&copy; 2026 willsemitech Corporation. All rights reserved.</span></p>
+    </footer>
+
+    <script>
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+            switchLanguage(savedLang);
+        });
+
+        function toggleLangDropdown() {
+            const dropdown = document.getElementById('langDropdown');
+            if (dropdown) {
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+
+        function switchLanguage(lang) {
+            // Save language preference
+            localStorage.setItem('selectedLanguage', lang);
+
+            // Reflect the active language on <html lang> so CSS can apply
+            // per-script typography (e.g. CJK/Hangul letter-spacing).
+            document.documentElement.setAttribute('lang', lang);
+
+            // Update all elements with data-lang attributes
+            const langOptions = document.querySelectorAll('.lang-option');
+            langOptions.forEach(option => {
+                option.classList.remove('active');
+                if (option.getAttribute('data-lang') === lang) {
+                    option.classList.add('active');
+                }
+            });
+
+            // Update language button display
+            const langText = document.querySelector('.lang-text');
+            const langMap = {
+                'en': 'EN',
+                'zh-cn': '简中',
+                'zh-tw': '繁中',
+                'ja': '日文',
+                'ko': '韓文'
+            };
+            if (langText) {
+                langText.textContent = langMap[lang];
+            }
+
+            // Update all translatable elements
+            const translatableElements = document.querySelectorAll('[data-en][data-zh-cn][data-zh-tw][data-ja][data-ko]');
+            translatableElements.forEach(element => {
+                const text = element.getAttribute(`data-${lang.replace('-', '-')}`);
+                if (text) {
+                    // Handle special cases where we don't want to replace HTML content
+                    if (element.tagName === 'A' || element.tagName === 'BUTTON') {
+                        element.textContent = text;
+                    } else if (element.tagName === 'SPAN' && element.innerHTML.includes('©')) {
+                        element.innerHTML = text;
+                    } else {
+                        element.textContent = text;
+                    }
+                }
+            });
+
+            // Close dropdown after selection
+            const dropdown = document.getElementById('langDropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const langSelector = document.querySelector('.language-selector');
+            if (langSelector && !langSelector.contains(e.target)) {
+                const dropdown = document.getElementById('langDropdown');
+                if (dropdown) {
+                    dropdown.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
