@@ -60,25 +60,16 @@ body {
     letter-spacing: -0.1px;
 }
 
-/* CJK / Hangul typography — the -0.1px/-0.5px/-0.3px Latin letter-spacing
-   above tightens full-width glyphs instead of refining them, so relax
-   tracking and open up line-height once the page switches script. */
-html[lang="zh-cn"] body,
-html[lang="zh-tw"] body,
-html[lang="ja"] body,
-html[lang="ko"] body {
+/* CJK typography — the -0.1px/-0.5px/-0.3px Latin letter-spacing above
+   tightens full-width glyphs instead of refining them, so relax tracking
+   and open up line-height once the page switches script. */
+html[lang="zh-cn"] body {
     letter-spacing: normal;
     line-height: 1.75;
 }
 
 html[lang="zh-cn"] .hero h1,
-html[lang="zh-tw"] .hero h1,
-html[lang="ja"] .hero h1,
-html[lang="ko"] .hero h1,
-html[lang="zh-cn"] .logo,
-html[lang="zh-tw"] .logo,
-html[lang="ja"] .logo,
-html[lang="ko"] .logo {
+html[lang="zh-cn"] .logo {
     letter-spacing: normal;
 }
 
@@ -346,37 +337,20 @@ main, .content-wrapper {
 /* Features Grid */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-m);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-l) var(--space-m);
     margin-top: var(--space-l);
 }
 
 .feature-card {
-    background: #FFFFFF;
-    padding: var(--space-m) var(--space-s);
-    border-radius: 12px;
-    border: 1px solid var(--qc-black-15);
     text-align: left;
-    transition: box-shadow 0.3s var(--ease-standard), transform 0.3s var(--ease-standard);
 }
 
-.feature-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-    border-color: var(--qc-black-8);
-}
-
-.feature-icon {
-    display: flex;
-    justify-content: center;
+.feature-line {
+    width: 32px;
+    height: 3px;
+    background: var(--qc-blue);
     margin-bottom: var(--space-s);
-}
-
-.feature-icon svg {
-    width: 40px;
-    height: 40px;
-    color: var(--qc-blue);
-    stroke-width: 1.75;
 }
 
 .feature-card h3 {
