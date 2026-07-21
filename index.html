@@ -21,15 +21,13 @@
     <nav class="navbar">
         <div class="navbar-left">
             <span class="logo" onclick="window.location.href='index.html'">willsemitech</span>
+        </div>
+        <div class="navbar-right">
             <ul class="nav-menu">
                 <li><a href="products/index.html" data-en="Products" data-zh-cn="产品">Products <span class="dropdown-icon">▼</span></a></li>
                 <li><a href="applications/index.html" data-en="Applications" data-zh-cn="应用">Applications <span class="dropdown-icon">▼</span></a></li>
                 <li><a href="developer/index.html" data-en="Developer" data-zh-cn="开发者">Developer <span class="dropdown-icon">▼</span></a></li>
                 <li><a href="support/index.html" data-en="Support" data-zh-cn="支持">Support <span class="dropdown-icon">▼</span></a></li>
-            </ul>
-        </div>
-        <div class="navbar-right">
-            <ul class="nav-menu">
                 <li>
                     <a href="company/index.html"
                        data-en="Company"
@@ -61,6 +59,9 @@
                 data-zh-cn="CAD 服务公司">
                 CAD Service Company
             </div>
+            <div class="hero-pillars">
+                <span data-en="Faster Sign-off" data-zh-cn="更快簽核">Faster Sign-off</span><span data-en="Fewer Iterations" data-zh-cn="更少迭代">Fewer Iterations</span><span data-en="Predictable Tape-outs" data-zh-cn="可預期流片">Predictable Tape-outs</span>
+            </div>
             <a href="#services" class="hero-cta"
                 data-en="Learn more"
                 data-zh-cn="了解更多">
@@ -71,6 +72,7 @@
 
     <!-- Main Content -->
     <div class="container">
+
         <!-- Your Partner -->
         <div class="content-section">
             <h2
@@ -86,100 +88,198 @@
             </p>
         </div>
 
-        <!-- Core Services -->
+        <!-- Core Services / Industries: tab switcher, in the vein of
+             Cadence's Technologies/Industries toggle -->
         <div class="content-section" id="services">
-            <h2
-                data-en="Core Services"
-                data-zh-cn="核心服务">
-                Core Services
-            </h2>
+            <div class="tab-switcher-nav">
+                <button type="button" class="active" onclick="switchTab('services-panel', this)"
+                    data-en="Core Services" data-zh-cn="核心服务">
+                    Core Services
+                </button>
+                <button type="button" onclick="switchTab('industries-panel', this)"
+                    data-en="Industries We Serve" data-zh-cn="服务领域">
+                    Industries We Serve
+                </button>
+            </div>
 
-            <div class="features-grid">
+            <div class="tab-panel active" id="services-panel">
+                <div class="features-grid">
 
-                <div class="feature-card">
-                    <div class="feature-line"></div>
-                    <h3
-                        data-en="CAD Flow Enablement"
-                        data-zh-cn="CAD 流程支持">
-                        CAD Flow Enablement
-                    </h3>
-                    <p
-                        data-en="Enable and optimize CAD design flows to improve productivity and reduce design cycle time."
-                        data-zh-cn="构建并优化 CAD 设计流程，以提升生产效率并缩短设计周期。">
-                        Enable and optimize CAD design flows to improve productivity and reduce design cycle time.
-                    </p>
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="CAD Flow Enablement"
+                            data-zh-cn="CAD 流程支持">
+                            CAD Flow Enablement
+                        </h3>
+                        <p
+                            data-en="Enable and optimize CAD design flows to improve productivity and reduce design cycle time."
+                            data-zh-cn="构建并优化 CAD 设计流程，以提升生产效率并缩短设计周期。">
+                            Enable and optimize CAD design flows to improve productivity and reduce design cycle time.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Design Automation"
+                            data-zh-cn="设计自动化">
+                            Design Automation
+                        </h3>
+                        <p
+                            data-en="Develop automation scripts to reduce manual effort and improve design consistency."
+                            data-zh-cn="开发自动化脚本，减少人工操作并提升设计一致性。">
+                            Develop automation scripts to reduce manual effort and improve design consistency.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Physical Verification Support"
+                            data-zh-cn="物理验证支持">
+                            Physical Verification Support
+                        </h3>
+                        <p
+                            data-en="Support DRC, LVS, and LPE verification flows to ensure tape-out readiness."
+                            data-zh-cn="支持 DRC、LVS 及 LPE 验证流程，确保设计具备流片条件。">
+                            Support DRC, LVS, and LPE verification flows to ensure tape-out readiness.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Foundry Interface Support"
+                            data-zh-cn="晶圆代工接口支持">
+                            Foundry Interface Support
+                        </h3>
+                        <p
+                            data-en="Manage and integrate foundry deliverables to align design flows with manufacturing requirements."
+                            data-zh-cn="管理并整合晶圆代工厂交付资料，使设计流程符合制造要求。">
+                            Manage and integrate foundry deliverables to align design flows with manufacturing requirements.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="PCell & Layout Automation"
+                            data-zh-cn="PCell 与版图自动化">
+                            PCell & Layout Automation
+                        </h3>
+                        <p
+                            data-en="Provide PCell development and layout automation to improve design reuse and efficiency."
+                            data-zh-cn="提供 PCell 开发与版图自动化，提高设计复用率与效率。">
+                            Provide PCell development and layout automation to improve design reuse and efficiency.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Project-Based CAD Services"
+                            data-zh-cn="项目制 CAD 服务">
+                            Project-Based CAD Services
+                        </h3>
+                        <p
+                            data-en="Provide flexible, project-based CAD support tailored to your design schedules and milestones."
+                            data-zh-cn="根据设计进度与里程碑，提供灵活的项目制 CAD 支持。">
+                            Provide flexible, project-based CAD support tailored to your design schedules and milestones.
+                        </p>
+                    </div>
+
                 </div>
+            </div>
 
-                <div class="feature-card">
-                    <div class="feature-line"></div>
-                    <h3
-                        data-en="Design Automation"
-                        data-zh-cn="设计自动化">
-                        Design Automation
-                    </h3>
-                    <p
-                        data-en="Develop automation scripts to reduce manual effort and improve design consistency."
-                        data-zh-cn="开发自动化脚本，减少人工操作并提升设计一致性。">
-                        Develop automation scripts to reduce manual effort and improve design consistency.
-                    </p>
+            <div class="tab-panel" id="industries-panel">
+                <div class="features-grid">
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Advanced-Node Digital Design"
+                            data-zh-cn="先进制程数字设计">
+                            Advanced-Node Digital Design
+                        </h3>
+                        <p
+                            data-en="Flow enablement and automation for high-density digital blocks on leading-edge process nodes."
+                            data-zh-cn="为先进制程节点的高密度数位区块提供流程建置与自动化。">
+                            Flow enablement and automation for high-density digital blocks on leading-edge process nodes.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Analog & Mixed-Signal IC Design"
+                            data-zh-cn="模拟与混合信号 IC 设计">
+                            Analog & Mixed-Signal IC Design
+                        </h3>
+                        <p
+                            data-en="PCell development and layout automation tailored to precision analog and mixed-signal blocks."
+                            data-zh-cn="针对精密模拟与混合信号区块，提供 PCell 开发与版图自动化。">
+                            PCell development and layout automation tailored to precision analog and mixed-signal blocks.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="RF Front-End & Foundry Enablement"
+                            data-zh-cn="RF 前端与晶圆代工建置">
+                            RF Front-End & Foundry Enablement
+                        </h3>
+                        <p
+                            data-en="Foundry interface support to align RF and front-end designs with manufacturing requirements."
+                            data-zh-cn="提供晶圆代工介面支援，使 RF 与前端设计符合制造要求。">
+                            Foundry interface support to align RF and front-end designs with manufacturing requirements.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Automotive & Industrial ICs"
+                            data-zh-cn="车用与工业用 IC">
+                            Automotive & Industrial ICs
+                        </h3>
+                        <p
+                            data-en="Physical verification support that helps meet the reliability bar required for automotive and industrial designs."
+                            data-zh-cn="提供物理验证支持，协助满足车用与工业设计所需的可靠性标准。">
+                            Physical verification support that helps meet the reliability bar required for automotive and industrial designs.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="AI & HPC Silicon Programs"
+                            data-zh-cn="AI 与高效能运算芯片项目">
+                            AI & HPC Silicon Programs
+                        </h3>
+                        <p
+                            data-en="Design automation scripting that keeps large, complex AI and HPC tapeouts on schedule."
+                            data-zh-cn="以设计自动化脚本，协助大型复杂 AI 与 HPC 项目如期流片。">
+                            Design automation scripting that keeps large, complex AI and HPC tapeouts on schedule.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-line"></div>
+                        <h3
+                            data-en="Sensor & MEMS Integration"
+                            data-zh-cn="传感器与 MEMS 整合">
+                            Sensor & MEMS Integration
+                        </h3>
+                        <p
+                            data-en="Project-based CAD support for sensor and MEMS teams working against tight design milestones."
+                            data-zh-cn="为面临紧凑设计里程碑的传感器与 MEMS 团队，提供项目制 CAD 支持。">
+                            Project-based CAD support for sensor and MEMS teams working against tight design milestones.
+                        </p>
+                    </div>
+
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-line"></div>
-                    <h3
-                        data-en="Physical Verification Support"
-                        data-zh-cn="物理验证支持">
-                        Physical Verification Support
-                    </h3>
-                    <p
-                        data-en="Support DRC, LVS, and LPE verification flows to ensure tape-out readiness."
-                        data-zh-cn="支持 DRC、LVS 及 LPE 验证流程，确保设计具备流片条件。">
-                        Support DRC, LVS, and LPE verification flows to ensure tape-out readiness.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-line"></div>
-                    <h3
-                        data-en="Foundry Interface Support"
-                        data-zh-cn="晶圆代工接口支持">
-                        Foundry Interface Support
-                    </h3>
-                    <p
-                        data-en="Manage and integrate foundry deliverables to align design flows with manufacturing requirements."
-                        data-zh-cn="管理并整合晶圆代工厂交付资料，使设计流程符合制造要求。">
-                        Manage and integrate foundry deliverables to align design flows with manufacturing requirements.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-line"></div>
-                    <h3
-                        data-en="PCell & Layout Automation"
-                        data-zh-cn="PCell 与版图自动化">
-                        PCell & Layout Automation
-                    </h3>
-                    <p
-                        data-en="Provide PCell development and layout automation to improve design reuse and efficiency."
-                        data-zh-cn="提供 PCell 开发与版图自动化，提高设计复用率与效率。">
-                        Provide PCell development and layout automation to improve design reuse and efficiency.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-line"></div>
-                    <h3
-                        data-en="Project-Based CAD Services"
-                        data-zh-cn="项目制 CAD 服务">
-                        Project-Based CAD Services
-                    </h3>
-                    <p
-                        data-en="Provide flexible, project-based CAD support tailored to your design schedules and milestones."
-                        data-zh-cn="根据设计进度与里程碑，提供灵活的项目制 CAD 支持。">
-                        Provide flexible, project-based CAD support tailored to your design schedules and milestones.
-                    </p>
-                </div>
-
             </div>
         </div>
 
@@ -228,6 +328,16 @@
             const savedLang = localStorage.getItem('selectedLanguage') || 'en';
             switchLanguage(savedLang);
         });
+
+        function switchTab(panelId, btn) {
+            const nav = btn.closest('.tab-switcher-nav');
+            nav.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const section = nav.closest('.content-section');
+            section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.getElementById(panelId).classList.add('active');
+        }
 
         function toggleLangDropdown() {
             const dropdown = document.getElementById('langDropdown');
